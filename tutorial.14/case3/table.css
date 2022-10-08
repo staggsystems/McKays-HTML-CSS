@@ -1,0 +1,67 @@
+/*
+   New Perspectives on HTML5, CSS, and JavaScript
+   Tutorial 14
+   Case Problem 3
+
+   Stats Table Style Sheet
+
+   Filename:         table.css
+   Supporting Files: 
+
+*/
+
+
+#statsTable {
+   border: 2px solid rgb(55, 55, 120);
+   border-collapse: collapse;
+   width: 100%;
+   margin: 10px auto;
+}
+
+#statsTable th {
+   font-size: 0.8em;
+   text-align: center;
+   background-color: rgb(55, 55, 120);
+   color: rgb(231, 231, 255);
+   padding: 3px;
+}
+
+#statsTable thead th {
+   cursor: pointer;
+}
+
+#statsTable tfoot th {
+   color: rgb(55, 55, 120);
+   background-color: rgb(255, 255, 231);
+   border-top: 1px solid rgb(151, 151, 151);
+}
+
+#statsTable td {
+   border: 1px solid rgb(255, 255, 231);
+   font-size: 0.8em;
+   padding: 3px;
+   vertical-align: top;
+}
+
+#statsTable caption {
+   text-align: left;
+   font-style: italic;
+   font-size: 22px;
+   margin: 0px 0px 10px 0px;
+}
+
+#statsTable col.sortColumn {
+   background-color: rgb(233, 255, 233);
+}
+
+#statsTable tbody tr:nth-child(even) {
+   background-color: rgba(150, 150, 211, 0.3);
+}
+
+.numCell {
+   text-align: right;
+}
+
+.textCell {
+   text-align: left;
+}

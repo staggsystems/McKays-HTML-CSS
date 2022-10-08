@@ -1,0 +1,73 @@
+/*
+   New Perspectives on HTML5, CSS, and JavaScript
+   Tutorial 14
+   Case Problem 2
+
+   Node tree Style Sheet
+
+   Filename:         tree.css
+   Supporting Files: 
+
+*/
+
+section#main article {
+   width: 500px;
+   margin-right: 10px;
+   float: left;
+}
+
+
+aside#treeBox {
+   width: 350px;
+   margin: 20px 10px 0px 10px;
+   outline: 1px solid rgb(50, 100, 160);
+   float: left;
+   background-color: rgb(230, 237, 245);
+   overflow: hidden;
+}
+
+aside#treeBox h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 22px;
+   letter-spacing: 4px;
+   height: 25px;
+   line-height: 25px;
+   border-bottom: 1px solid black;
+   background-color: rgb(50, 100, 160);
+   color: white;
+   margin: 0px;
+}
+
+aside#treeBox ol {
+   font-size: 12px;
+   font-family: 'Courier New', Courier, monospace;
+   list-style: none;
+}
+
+
+aside#treeBox > ol {
+   height: 450px;
+   overflow: scroll;
+   margin-left: 5px;
+   margin-top: 5px;
+   padding-left: 0px;
+}
+
+aside#treeBox span.elemLI {
+   color: red;
+}
+
+aside#treeBox span.textLI {
+   color: rgb(121, 121, 121);
+   font-style: italic;
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   color: rgb(50, 100, 160);
+}
+
+
+aside#treeBox span.wsLI {
+   outline: 1px dotted rgb(121, 121, 121);
+   color: rgb(121, 121, 121);
+   background-color: rgb(240, 247, 255);
+}

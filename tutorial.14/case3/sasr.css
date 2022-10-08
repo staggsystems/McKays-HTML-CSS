@@ -1,0 +1,196 @@
+/*
+   New Perspectives on HTML5, CSS, and JavaScript
+   Tutorial 14
+   Case Problem 3
+
+   SASR Style Sheet
+
+   Filename:         sasr.css
+   Supporting Files: 
+
+*/
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   margin: 0px;
+   background-color: rgb(231, 231, 255);
+}
+
+body * {
+   font-weight: inherit;
+   line-height: 1.2em;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+   list-style-type: none;
+
+}
+
+/* Main Section Styles */
+section#page {
+   background-color: white;
+   border-right: 1px solid rgb(171, 171, 171);
+   border-left: 1px solid rgb(171, 171, 171);
+   margin: 0px auto;
+   width: 902px;
+
+   -moz-box-shadow: rgb(50, 100, 160) -20px 0px 90px,
+               rgb(50, 100, 160) 20px 0px 90px;
+   -webkit-box-shadow: rgb(50, 100, 160) -20px 0px 90px,
+               rgb(50, 100, 160) 20px 0px 90px;
+   box-shadow: rgb(50, 100, 160) -20px 0px 90px,
+               rgb(50, 100, 160) 20px 0px 90px;
+}
+
+
+/* Header styles */
+   
+header > div {
+   float: right;
+   margin: 10px 10px 0px 0px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation lists */
+
+
+nav.horizontal {
+   width: 100%;
+   position: relative;
+}
+
+nav.horizontal ul {
+   margin: 0px;
+   list-style-type: none;
+}
+
+nav.horizontal ul li {
+   float: left;
+   display: block;
+   width: 12.5%;
+}
+
+
+
+nav.horizontal ul li a {
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   display: block;
+   border-top: 1px solid rgb(171, 171, 171);
+   border-bottom: 1px solid rgb(171, 171, 171);
+   text-align: center;
+   background-color: rgb(231, 231, 255);
+   font-size: 16px;
+   height: 20px;
+   line-height: 20px;
+}
+
+nav.horizontal ul li a:hover {
+   color: rgb(231, 231, 255);
+   background-color: rgb(101, 101, 101);
+}
+
+nav.vertical {
+   clear: left;
+   float: left;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 200px;
+}
+
+nav.vertical li {
+   width: 180px;
+   text-indent: 10px;
+   background-color: rgb(0, 0, 255);
+   border-top: 2px solid rgb(0, 204, 0);
+   border-right: 2px solid rgb(0, 204, 0);
+   border-bottom: 2px solid rgb(0, 204, 0);
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   height: 35px;
+   line-height: 35px;
+   margin-bottom: 15px;
+   -moz-box-shadow: black 20px 0px 20px;
+   -webkit-box-shadow: black 20px 0px 20px;
+   box-shadow: black 5px 0px 20px;
+}
+
+nav.vertical li a {
+   color: white;
+   letter-spacing: 2px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+
+nav.vertical li a:hover {
+   color: rgb(0, 204, 0);
+}
+
+
+/* Main Article Styles */
+
+article {
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   float: left;
+   width: 680px;
+   margin: 20px 10px 10px 10px;
+}
+
+article h1 {
+   background: rgb(151, 203, 152) url(gradient.png) repeat-y;
+   color: white;
+   text-indent: 10px;
+   letter-spacing: 5px;
+   line-height: 45px;
+   font-size: 24px;
+   height: 45px;
+}
+
+#statsButtons {
+   margin: 10px 0px;
+}
+
+#statsButtons input {
+   width: 17%;
+   margin: 0px 1%;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   font-size: 14px;
+   background-color: rgb(231, 255, 231);
+   color: rgb(0, 0, 255);
+   cursor: pointer;
+}
+
+
+/* Page footer styles */
+
+footer {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   clear: left;
+   font-size: 0.8em;
+   height: 30px;
+   text-indent: 15px;
+   padding-top: 10px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+footer span a {
+   color: black;
+}
